@@ -1,0 +1,16 @@
+.gradle/
+.idea/
+local.properties
+.cxx/
+**/build/
+captures/
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+*.jks
+*.keystore
+*.apk
+*.aab
+app/release/

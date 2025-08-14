@@ -1,0 +1,52 @@
+[versions]
+compose-bom = "2025.08.00"
+activity-compose = "1.10.1"
+navigation-compose = "2.9.3"
+hilt-navigation-compose = "1.2.0"
+core-ktx = "1.17.0"        # usa 1.13.1 si te quedas en compileSdk 35
+lifecycle = "2.9.2"
+firebase-bom = "34.1.0"
+coroutines = "1.10.2"
+agp = "8.12.0"
+kotlin = "2.2.0"
+ksp = "2.2.0-2.0.2"
+gms = "4.4.3"
+hilt = "2.57"
+runtime = "1.8.3"
+firebase-storage-ktx = "22.0.0"
+foundation = "1.8.3"
+
+[libraries]
+compose-bom                 = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+compose-material3           = { module = "androidx.compose.material3:material3" }
+compose-ui                  = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling          = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview  = { module = "androidx.compose.ui:ui-tooling-preview" }
+material-icons-extended     = { module = "androidx.compose.material:material-icons-extended" }
+dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+compose-ui-text            = { module = "androidx.compose.ui:ui-text" }
+activity-compose            = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+navigation-compose          = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+hilt-navigation-compose     = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+core-ktx                    = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+lifecycle-runtime-ktx       = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-compose   = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+
+firebase-bom                = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-auth               = { module = "com.google.firebase:firebase-auth" }
+firebase-firestore          = { module = "com.google.firebase:firebase-firestore" }
+firebase-storage = { module = "com.google.firebase:firebase-storage" }
+kotlinx-coroutines-android        = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-play-services  = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
+runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtime" }
+foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundation" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose      = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+google-services     = { id = "com.google.gms.google-services", version.ref = "gms" }
+hilt                = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp                 = { id = "com.google.devtools.ksp", version.ref = "ksp" }
